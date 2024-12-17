@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Streamlit 앱 타이틀
-st.title("중학생 과학 시뮬레이션 📊")
+st.title("bluescreen 중학생 과학 시뮬레이션 📊")
 
 # 교육과정 선택
 course_option = st.selectbox(
@@ -37,7 +37,7 @@ elif course_option == "물질의 상태 변화":
     st.write("온도에 따른 물질의 상태 변화를 알아봅니다. 물질은 고체, 액체, 기체로 변화할 수 있습니다.")
     
     # 사용자 입력 받기
-    temperature = st.slider("온도를 선택하세요 (°C)", -50, 150, 20)
+    temperature = st.slider("tem (°C)", -50, 150, 20)
     
     if temperature <= 0:
         state = "고체 ❄️"
@@ -54,9 +54,9 @@ elif course_option == "물질의 상태 변화":
     states = ["고체" if temp <= 0 else "액체" if temp <= 100 else "기체" for temp in temperatures]
     
     ax.plot(temperatures, states, color="green")
-    ax.set_title("물질의 상태 변화 (온도에 따른 상태 변화)")
-    ax.set_xlabel("온도 (°C)")
-    ax.set_ylabel("물질의 상태")
+    ax.set_title("change")
+    ax.set_xlabel("tem (°C)")
+    ax.set_ylabel("status")
     st.pyplot(fig)
 
 st.write("이 시뮬레이션은 과학 개념을 이해하고, 실험을 통해 그 관계를 시각적으로 탐구할 수 있는 도구입니다. 즐기세요! 😊")
