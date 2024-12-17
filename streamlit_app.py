@@ -26,9 +26,9 @@ if course_option == "뉴턴의 운동 법칙":
     # 그래프 그리기
     fig, ax = plt.subplots()
     ax.plot([0, 1], [0, force], label=f'힘 = {force} N', color="blue")
-    ax.set_title("힘-가속도 관계 그래프")
-    ax.set_xlabel("가속도 (m/s²)")
-    ax.set_ylabel("힘 (N)")
+    ax.set_title("graph")
+    ax.set_xlabel(" (m/s²)")
+    ax.set_ylabel("power (N)")
     ax.legend()
     st.pyplot(fig)
 
